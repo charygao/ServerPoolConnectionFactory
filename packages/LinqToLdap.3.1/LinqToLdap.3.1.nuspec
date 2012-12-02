@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>LinqToLdap</id>
+    <version>3.1</version>
+    <title>LINQ to LDAP</title>
+    <authors>Alan Hatter</authors>
+    <owners>Alan Hatter</owners>
+    <licenseUrl>http://linqtoldap.codeplex.com/license</licenseUrl>
+    <projectUrl>http://linqtoldap.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>LINQ provider built on top of System.DirectoryServices.Protocols for querying and updating LDAP servers.</description>
+    <summary>LINQ provider built on top of System.DirectoryServices.Protocols for querying and updating LDAP servers.</summary>
+    <releaseNotes>Interceptors have been added for Add, Update, and Delete operations.
+
+Fixed bug where mapped Collection properties on objects extending DirectoryObjectBase are not updated when changed.
+
+Fixed bug where DebugTextWriter can be garbage collected before use.
+
+ListServerAttributes now returns IDirectoryAttributes. Existing code expecting IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; will still function.
+
+ObjectClass must be mapped when adding objects to the directory. ObjectCategory is no longer used.</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>LINQ LDAP AD active directory openldap</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="" />
+      <frameworkAssembly assemblyName="System.DirectoryServices.Protocols" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
